@@ -10,6 +10,10 @@ insert into dueno values('CC',1657984351,'Stanley','Kubrick',3137478520,'Manhatt
 insert into dueno values('CE',1799763456,'Cristopher','Nolan',3110258632,'Westminster','326 Blue Branch Walk', 'cristopher@BD.com');
 insert into dueno values('CC',1456456358,'Quentin','Tarantino',3147854210,'Knoxville','26 Cotton Wynd', 'quentin@BD.com');
 
+
+
+
+
 --Insercion Especialidad
 insert into especialidad values(1,'Neurologia',1.10);
 insert into especialidad values(2,'Cardiologia',1.15);
@@ -17,7 +21,7 @@ insert into especialidad values(3,'Odontologia',1.82);
 insert into especialidad values(4,'Ortopedia',1.76);
 insert into especialidad values(5,'Esterilizacion',1.15);
 
---Insercion Especia
+--Insercion Especie
 insert into especie values(0,'Canino');
 insert into especie values(1,'Felino');
 insert into especie values(2,'Aves');
@@ -64,5 +68,4 @@ insert into notas values(3,TO_DATE('2019/08/28 01:46:18','YYYY/MM/DD HH24:MI:SS'
 insert into notas values(4,TO_DATE('2019/08/21 05:33:33','YYYY/MM/DD HH24:MI:SS'),'La descamacion de la babilla, es causada por el agua contaminada en la que habitaba');
 insert into notas values(5,TO_DATE('2019/08/24 09:10:11','YYYY/MM/DD HH24:MI:SS'),'El Hamster fue dejado caer desde un armario,ya que el hijo del dueño quizo jugar con el. No hubo ninguna lesion');
 insert into notas values(6,TO_DATE('2019/08/23 13:13:13','YYYY/MM/DD HH24:MI:SS'),'El reptil consumio accidentalmente su excremento y adquirio salmonelosis');
-
 
