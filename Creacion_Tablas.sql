@@ -1,4 +1,3 @@
-
 drop table notas;
 drop table visitas;
 drop table mascota;
@@ -56,8 +55,10 @@ create table mascota(
     tipo_doc_dueno varchar(2), --NIT, CC, CE
     num_doc_dueno number(10,0),
     primary key(id_mascota),
-    foreign key(id_especie) references especie,
-    foreign key(tipo_doc_dueno,num_doc_dueno) references dueno,
+    foreign key(id_especie) references especie
+      on delete cascade,
+    foreign key(tipo_doc_dueno,num_doc_dueno) references dueno
+      on delete cascade,
     check(tipo_doc_dueno in('CC','CE'))
 );
 
@@ -71,8 +72,10 @@ id_mascota number(3,0) not null,
 numero_doc_vet number(10,0) not null,
 tipo_doc_vet varchar(3),
 costo number(19,4),
-foreign key (id_mascota) references mascota,
-foreign key (numero_doc_vet,tipo_doc_vet) references veterinario,
+foreign key (id_mascota) references mascota
+  on delete cascade,
+foreign key (numero_doc_vet,tipo_doc_vet) references veterinario
+  on delete cascade,
 primary key (id_visita),
 check (tipo in ('HOSPITALIZACION','CONSULTA'))
 );
@@ -81,7 +84,8 @@ create table notas(
 	id_visita number(4,0),
 	fecha_nota date,
 	nota varchar2(500) not null,
-	foreign key(id_visita) references visitas,
+	foreign key(id_visita) references visitas
+    on delete cascade,
 	primary key(id_visita,fecha_nota)	
 );
-
+commit;
