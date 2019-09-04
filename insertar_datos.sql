@@ -54,14 +54,30 @@ insert into mascota values(9,'Gunna',TO_DATE('2012/05/28','YYYY/MM/DD'),1,'CE',1
 insert into mascota values(10,'Lucki',TO_DATE('2013/10/12','YYYY/MM/DD'),5,'CC',1056378590);
 
 --Insercion visitas
-insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (1,1,'CONSULTA',TO_DATE('2019/08/30 13:05:14','YYYY/MM/DD HH24:MI:SS'),TO_DATE('2019/08/30 09:00:15','YYYY/MM/DD HH24:MI:SS'),'CAIDA DE PELO',1420132569,'CC',NULL);
-insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (2,3,'CONSULTA',TO_DATE('2019/08/29 23:55:55','YYYY/MM/DD HH24:MI:SS'),TO_DATE('2019/08/29 09:05:05','YYYY/MM/DD HH24:MI:SS'),'ESCREMENTO LIQUIDO',1452087452,'CE',NULL);
-insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (3,5,'CONSULTA',TO_DATE('2019/08/28 09:49:59','YYYY/MM/DD HH24:MI:SS'),TO_DATE('2019/08/28 09:15:00','YYYY/MM/DD HH24:MI:SS'),'PATA LASTIMADA',1254785214,'CE',NULL);
-insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (4,2,'HOSPITALIZACION',TO_DATE('2019/08/20 06:06:06','YYYY/MM/DD HH24:MI:SS'),NULL,'DESCAMACION SEVERA',1402547896,'CC',NULL);
-insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (5,4,'HOSPITALIZACION',TO_DATE('2019/08/15 12:01:23','YYYY/MM/DD HH24:MI:SS'),TO_DATE('2019/08/23 09:30:02','YYYY/MM/DD HH24:MI:SS'),'CAIDA DE GRAN ALTURA',1254785214,'CE',NULL);
-insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (6,6,'HOSPITALIZACION',TO_DATE('2019/08/22 14:19:14','YYYY/MM/DD HH24:MI:SS'),NULL,'BACTERIA ESTOMACAL',1254789632,'CC',NULL);
+--insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (1,1,'CONSULTA',TO_DATE('2019/08/30 13:05:14','YYYY/MM/DD HH24:MI:SS'),null,'CAIDA DE PELO',1420132569,'CC',NULL);
+--insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (2,3,'CONSULTA',TO_DATE('2019/08/29 23:55:55','YYYY/MM/DD HH24:MI:SS'),null,'ESCREMENTO LIQUIDO',1452087452,'CE',NULL);
+--insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (3,5,'CONSULTA',TO_DATE('2019/08/28 09:49:59','YYYY/MM/DD HH24:MI:SS'),null,'PATA LASTIMADA',1254785214,'CE',NULL);
+--insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (4,2,'HOSPITALIZACION',TO_DATE('2019/08/20 06:06:06','YYYY/MM/DD HH24:MI:SS'),NULL,'DESCAMACION SEVERA',1402547896,'CC',NULL);
+--insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (5,4,'HOSPITALIZACION',TO_DATE('2019/09/1 12:01:23','YYYY/MM/DD HH24:MI:SS'),null,'CAIDA DE GRAN ALTURA',1254785214,'CE',NULL);
+--insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (6,6,'HOSPITALIZACION',TO_DATE('2019/08/22 14:19:14','YYYY/MM/DD HH24:MI:SS'),NULL,'BACTERIA ESTOMACAL',1254789632,'CC',NULL);
+--insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (7,4,'CONSULTA',TO_DATE('2019/08/24','YYYY/MM/DD'),NULL,'CAIDA DE GRAN ALTURA',1254785214,'CE',NULL);
+--insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (8,1,'HOSPITALIZACION',TO_DATE('2019/07/15','YYYY/MM/DD'),null,'ENVENENAMIENTO',1452087452,'CE',NULL);
+--insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (9,6,'HOSPITALIZACION',TO_DATE('2018/06/18','YYYY/MM/DD'),null,'ENFERMEDAD ESTOMACAL',1254789632,'CC',NULL);
+--insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (10,6,'CONSULTA',TO_DATE('2018/06/29','YYYY/MM/DD'),NULL,'BACTERIA ESTOMACAL',1254789632,'CC',NULL);
+insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (1,1,'CONSULTA',TO_DATE('2019/06/30','YYYY/MM/DD'),NULL,'CAIDA DE PELO',1420132569,'CC',NULL);
+insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (2,3,'CONSULTA',TO_DATE('2019/08/29','YYYY/MM/DD'),NULL,'ESCREMENTO LIQUIDO',1452087452,'CE',NULL);
+insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (3,5,'CONSULTA',TO_DATE('2019/07/28','YYYY/MM/DD'),NULL,'PATA LASTIMADA',1254785214,'CE',NULL);
+insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (4,2,'HOSPITALIZACION',TO_DATE('2019/08/20','YYYY/MM/DD'),NULL,'DESCAMACION SEVERA',1402547896,'CC',NULL);
+insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (5,4,'HOSPITALIZACION',TO_DATE('2019/09/15','YYYY/MM/DD'),NULL,'CAIDA DE GRAN ALTURA',1254785214,'CE',NULL);
+insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (6,6,'HOSPITALIZACION',TO_DATE('2019/06/22','YYYY/MM/DD'),NULL,'BACTERIA ESTOMACAL',1254789632,'CC',NULL);
+
+insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (7,4,'CONSULTA',TO_DATE('2019/08/24','YYYY/MM/DD'),NULL,'CAIDA DE GRAN ALTURA',1254785214,'CE',NULL);
+insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (8,1,'HOSPITALIZACION',TO_DATE('2019/07/15','YYYY/MM/DD'),TO_DATE('2019/08/23','YYYY/MM/DD'),'ENVENENAMIENTO',1452087452,'CE',NULL);
+insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (9,6,'HOSPITALIZACION',TO_DATE('2018/06/18','YYYY/MM/DD'),TO_DATE('2018/06/20','YYYY/MM/DD'),'ENFERMEDAD ESTOMACAL',1254789632,'CC',NULL);
+insert into visitas(id_visita,id_mascota,tipo,fecha_ingreso,fecha_egreso,motivo_visita,numero_doc_vet,tipo_doc_vet,costo) values (10,6,'CONSULTA',TO_DATE('2018/06/29','YYYY/MM/DD'),NULL,'BACTERIA ESTOMACAL',1254789632,'CC',NULL);
 
 --Insercion Notas
+
 insert into notas values(1,TO_DATE('2019/08/30 11:06:11','YYYY/MM/DD HH24:MI:SS'),'El felino presenta caida de pelo severa y ,se encontro que es gracias a unos quimicos utilizados para limpiar el piso en la casa de los dueños');
 insert into notas values(2,TO_DATE('2019/08/29 23:06:14','YYYY/MM/DD HH24:MI:SS'),'Se le atribuye el problema del excremento liquido al consumo de lacteos diariamente, se le recomendo al dueño dejar de darle este tipo de alimentos a su mascota');
 insert into notas values(3,TO_DATE('2019/08/28 01:46:18','YYYY/MM/DD HH24:MI:SS'),'La lesion en la pata derecha del loro, fue causada por un descuido del dueño, al soltarlo de la jaula mientras este se encontraba alterado, la lesion es solo un golpe y no tuvo daño oseo');
@@ -69,3 +85,4 @@ insert into notas values(4,TO_DATE('2019/08/21 05:33:33','YYYY/MM/DD HH24:MI:SS'
 insert into notas values(5,TO_DATE('2019/08/24 09:10:11','YYYY/MM/DD HH24:MI:SS'),'El Hamster fue dejado caer desde un armario,ya que el hijo del dueño quizo jugar con el. No hubo ninguna lesion');
 insert into notas values(6,TO_DATE('2019/08/23 13:13:13','YYYY/MM/DD HH24:MI:SS'),'El reptil consumio accidentalmente su excremento y adquirio salmonelosis');
 
+commit;
